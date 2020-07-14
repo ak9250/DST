@@ -37,7 +37,7 @@ See ```demo_warp.ipynb``` for a short demo of the differentiable warping module 
 
 ## Usage
 
-See ```job_example.sh``` for an example with default settings that we like.
+See ```job_example.sh``` for example commands with default settings that we like.
 
 
 ### 1. Run NBB to get correspondences
