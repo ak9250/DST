@@ -62,7 +62,7 @@ Finally, run deformable style transfer. Stylization will take a few minutes on a
 
 By default, DST will stylize the image at three scales (small to big) with **max_iter** iterations at each scale. Change **content_weight** (alpha) and **warp_weight** (beta) to control the relative importance of content preservation and deformation to stylization, and **reg_weight** (gamma) to control the amount of regularization on the deformation. 
 
-Set **verbose** to 1 to get the individual loss term values during training. 
+Set **verbose** to 1 to get the individual loss term values during training.  
 Set **save_intermediate** to 1 to get intermediate stylized images every **checkpoint_iter** iterations.  
 Set **save_extra** to 1 to get additional plots (e.g. content/stylized images naively warped, content image with DST warp) with points and arrows marked.
 ```
