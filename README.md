@@ -62,7 +62,7 @@ python cleanpoints.py ${content_path} ${style_path} ${content_pts_path} ${style_
 
 Finally, run deformable style transfer. Stylization will take a few minutes on a GPU.
 
-By default, DST will stylize the image at three scales (small to big) with **max_iter** iterations at each scale. Change **content_weight** (alpha) and **warp_weight** (beta) to control the relative importance of content preservation and deformation to stylization, and **reg_weight** (gamma) to control the amount of regularization on the deformation. I personally like using 8, 0.5, and 50, respectively.
+By default, DST will stylize the image at three scales (small to big) with **max_iter** iterations at each scale. Change **content_weight** (alpha) and **warp_weight** (beta) to control the relative importance of content preservation and deformation to stylization, and **reg_weight** (gamma) to control the amount of regularization on the deformation. We personally like using 8, 0.5, and 50, respectively.
 
 Set **verbose** to 1 to get the individual loss term values during training.  
 Set **save_intermediate** to 1 to get intermediate stylized images every **checkpoint_iter** iterations.  
