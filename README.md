@@ -25,6 +25,8 @@ Our code is based on code from the following papers:
 
 ## Demo
 
+**We're still improving our demos. Please stay tuned for updates!**
+
 See ```demo_DST.ipynb``` for a demo of our work. You can also run this notebook on [Google Colab](https://colab.research.google.com/drive/1nCeHM1gF-WNcT-npqcK6pb6yPju_QTmq?usp=sharing).
 
 See ```demo_warp.ipynb``` for a short demo of the differentiable warping module we use to transfer geometric style.
