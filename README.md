@@ -1,6 +1,8 @@
 # Deformable Style Transfer (DST)
 
-This repo provides the source code and demo of our paper: [Deformable Style Transfer](https://arxiv.org/abs/2003.11038) (ECCV 2020).
+This repo provides the source code of our paper: [Deformable Style Transfer](https://arxiv.org/abs/2003.11038) (ECCV 2020).
+
+**We're currently preparing a Colab demo of our work. Please stay tuned for updates!**
 
 It also contains a pytorch implementation of a differentiable warping module that uses thin-plate spline interpolation. This is a reimplementation of WarpGAN's tensorflow code.
 
@@ -12,11 +14,6 @@ It also contains a pytorch implementation of a differentiable warping module tha
   booktitle = {European Conference on Computer Vision (ECCV)},  
 }
 ```
-
-## Demo
-
-**We're currently preparing a Colab demo of our work. Please stay tuned for updates!**
-
 
 ## Dependencies
 
