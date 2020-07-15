@@ -2,8 +2,6 @@
 
 This repo provides the source code of our paper: [Deformable Style Transfer](https://arxiv.org/abs/2003.11038) (ECCV 2020).
 
-**We're currently preparing a Colab demo of our work. Please stay tuned for updates!**
-
 It also contains a pytorch implementation of a differentiable warping module that uses thin-plate spline interpolation. This is a reimplementation of WarpGAN's tensorflow code.
 
 ```
@@ -14,6 +12,9 @@ It also contains a pytorch implementation of a differentiable warping module tha
   booktitle = {European Conference on Computer Vision (ECCV)},  
 }
 ```
+
+**We're currently preparing a Colab demo of our work. Please stay tuned for updates!**
+
 
 ## Dependencies
 
@@ -62,3 +63,4 @@ Our code is based on code from the following papers:
 - Style Transfer by Relaxed Optimal Transport and Self-Similarity. Nicholas Kolkin, Jason Salavon and Gregory Shakhnarovich. CVPR 2019. [[arXiv]](https://arxiv.org/abs/1904.12785) [[authors' code]](https://github.com/nkolkin13/STROTSS) [[David Futschik's implementation]](https://github.com/futscdav/strotss)
 - WarpGAN: Automatic Caricature Generation. Yichun Shi, Debayan Deb and Anil K. Jain. CVPR 2019. [[arXiv]](https://arxiv.org/abs/1811.10100) [[code]](https://github.com/seasonSH/WarpGAN)
 - Neural Best-Buddies: Sparse Cross-Domain Correspondence. Kfir Aberman, Jing Liao, Mingyi Shi, Dani Lischinski, Baoquan Chen and Daniel Cohen-Or. SIGGRAPH 2018. [[arXiv]](https://arxiv.org/abs/1805.04140) [[code]](https://github.com/kfiraberman/neural_best_buddies)
+
