@@ -13,23 +13,9 @@ It also contains a pytorch implementation of a differentiable warping module tha
 }
 ```
 
-## Acknowledgment
-Our code is based on code from the following papers:
-- Style Transfer by Relaxed Optimal Transport and Self-Similarity. Nicholas Kolkin, Jason Salavon and Gregory Shakhnarovich. CVPR 2019. [[arXiv]](https://arxiv.org/abs/1904.12785) [[authors' code]](https://github.com/nkolkin13/STROTSS) [[David Futschik's implementation]](https://github.com/futscdav/strotss)
-- WarpGAN: Automatic Caricature Generation. Yichun Shi, Debayan Deb and Anil K. Jain. CVPR 2019. [[arXiv]](https://arxiv.org/abs/1811.10100) [[code]](https://github.com/seasonSH/WarpGAN)
-- Neural Best-Buddies: Sparse Cross-Domain Correspondence. Kfir Aberman, Jing Liao, Mingyi Shi, Dani Lischinski, Baoquan Chen and Daniel Cohen-Or. SIGGRAPH 2018. [[arXiv]](https://arxiv.org/abs/1805.04140) [[code]](https://github.com/kfiraberman/neural_best_buddies)
-<!--
-- The Face of Art: Landmark Detection and Geometric Style in Portraits. Jordan Yaniv, Yael Newman and Ariel Shamir. SIGGRAPH 2019. [[website]](http://www.faculty.idc.ac.il/arik/site/foa/face-of-art.asp) [[code]](https://github.com/papulke/face-of-art)
-- Image Style Transfer Using Convolutional Neural Networks. Leon A. Gatys, Alexander S. Ecker and Matthias Bethge. CVPR 2016. [[arXiv]](https://arxiv.org/abs/1508.06576) [[code]](https://github.com/leongatys/PytorchNeuralStyleTransfer)
--->
-
 ## Demo
 
-**We're still improving our demos. Please stay tuned for updates!**
-
-See ```demo_DST.ipynb``` for a demo of our work. You can also run this notebook on [Google Colab](https://colab.research.google.com/drive/1nCeHM1gF-WNcT-npqcK6pb6yPju_QTmq?usp=sharing).
-
-See ```demo_warp.ipynb``` for a short demo of the differentiable warping module we use to transfer geometric style.
+**We're currently preparing a Colab demo of our work. Please stay tuned for updates!**
 
 
 ## Dependencies
@@ -62,7 +48,7 @@ python cleanpoints.py ${content_path} ${style_path} ${content_pts_path} ${style_
 
 Finally, run deformable style transfer. Stylization will take a few minutes on a GPU.
 
-By default, DST will stylize the image at three scales (small to big) with **max_iter** iterations at each scale. Change **content_weight** (alpha) and **warp_weight** (beta) to control the relative importance of content preservation and deformation to stylization, and **reg_weight** (gamma) to control the amount of regularization on the deformation. We personally like using 8, 0.5, and 50, respectively.
+By default, DST will stylize the image at three scales (small to big) with **max_iter** iterations at each scale. Change **content_weight** (alpha) and **warp_weight** (beta) to control the relative importance of content preservation and deformation to stylization, and **reg_weight** (gamma) to control the amount of regularization on the deformation. We like using 8, 0.5, and 50, respectively.
 
 Set **verbose** to 1 to get the individual loss term values during training.  
 Set **save_intermediate** to 1 to get intermediate stylized images every **checkpoint_iter** iterations.  
@@ -73,3 +59,9 @@ python main.py ${content_path} ${style_path} ${content_pts_path} ${style_pts_pat
   ${checkpoint_iter} ${content_weight} ${warp_weight} ${reg_weight} ${optim} \
   ${lr} ${verbose} ${save_intermediate} ${save_extra} ${device}
 ```
+
+## Acknowledgment
+Our code is based on code from the following papers:
+- Style Transfer by Relaxed Optimal Transport and Self-Similarity. Nicholas Kolkin, Jason Salavon and Gregory Shakhnarovich. CVPR 2019. [[arXiv]](https://arxiv.org/abs/1904.12785) [[authors' code]](https://github.com/nkolkin13/STROTSS) [[David Futschik's implementation]](https://github.com/futscdav/strotss)
+- WarpGAN: Automatic Caricature Generation. Yichun Shi, Debayan Deb and Anil K. Jain. CVPR 2019. [[arXiv]](https://arxiv.org/abs/1811.10100) [[code]](https://github.com/seasonSH/WarpGAN)
+- Neural Best-Buddies: Sparse Cross-Domain Correspondence. Kfir Aberman, Jing Liao, Mingyi Shi, Dani Lischinski, Baoquan Chen and Daniel Cohen-Or. SIGGRAPH 2018. [[arXiv]](https://arxiv.org/abs/1805.04140) [[code]](https://github.com/kfiraberman/neural_best_buddies)
