@@ -10,6 +10,8 @@ from util import util
 from util import MLS
 
 from options.options import Options
+
+def points(image1, image2):
 opt = Options().parse()
 
 vgg19 = vgg19_model.define_Vgg19(opt)
